@@ -1,0 +1,9 @@
+<?php 
+	require_once(APPLICATION_PATH.'/views/scripts/sp/mobile_device_detect.php');
+
+	if (mobile_device_detect()) {
+		include APPLICATION_PATH.'/views/scripts/sp/logIn/sp_logIn.php';
+	} else {
+		include APPLICATION_PATH.'/views/scripts/pc/logIn/pc_logIn.php';
+	}
+?>

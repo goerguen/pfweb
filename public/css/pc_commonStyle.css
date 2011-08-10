@@ -1,0 +1,31 @@
+img {
+	border: none;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+	font-style: inherit;
+	font-variant: normal;
+	color: gray;	
+	text-decoration: none;
+	text-underline: none;
+}
+
+/* style form */
+form dt {
+	display: block;
+	text-align: center;
+    clear: left;        
+}
+form dd {
+	display: block;
+	text-align: center;
+    clear: left;    
+}
+form #submitbutton {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

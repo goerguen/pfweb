@@ -1,0 +1,34 @@
+<?php 
+$this->headMeta()->appendHttpEquiv('Content-Type', 'text/html;charset=utf-8');
+$this->headTitle()->setSeparator(' - ');
+$this->headTitle('VM WebClient');
+
+// echo $this->doctype();  ?>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+	<head>
+	    <?php  echo $this->headTitle(); ?>
+	    <?php  echo $this->headMeta()->prependName('viewport', 'width=device-width, initial-scale=1, user-scalable=no'); ?>
+	    
+	    <?php  echo $this->headLink()->prependStylesheet($this->baseUrl().'/css/pc_commonStyle.css'); ?> 
+	    <?php  echo $this->headLink()->prependStylesheet($this->baseUrl().'/css/sp_commonStyle.css','only screen and (max-device-width: 640px)'); ?>
+	    
+	    <?php  echo $this->headLink()->prependStylesheet($this->baseUrl().'/css/dojo-release-1.5.0/themes/pc_nihilo/nihilo.css'); ?> 
+	    <?php  echo $this->headLink()->prependStylesheet($this->baseUrl().'/css/dojo-release-1.5.0/themes/sp_nihilo/nihilo.css','only screen and (max-device-width: 640px)'); ?>
+	    
+	    
+	    <style type="text/css">
+            body, html { font-family:helvetica,arial,sans-serif; font-size:90%; }
+        </style>
+        <style type="text/css">
+            html, body { width: 100%; height: 100%; margin: 0; overflow:hidden; }
+            #borderContainerTwo { width: 100%; height: 100%; }
+        </style>
+     </head>
+	
+	<body class="nihilo">
+	<div id="content">
+	    <?php echo $this->layout()->content; ?>
+	</div>
+	</body>
+</html>
